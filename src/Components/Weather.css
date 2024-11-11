@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #007affa1;
+    --text-color: #fff;
+    --divider-color: black;
+    --icon-size: 100px;
+    --font-large: 40px;
+    --font-medium: 30px;
+    --font-small: 18px;
+  }
+  
+  /* General container */
+  .weather-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: right;
+    margin-top: 60px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.44);
+
+
+  }
+  
+  /* Header styles */
+  .weather-header {
+    color: var(--text-color);
+  }
+  
+  .weather-divider {
+    border: none;
+    height: 1px;
+    background-color: var(--divider-color);
+    margin: 10px 0;
+  }
+  
+  /* Weather details section */
+  .weather-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Temperature information styles */
+  .temperature-info {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .temperature {
+    font-size: var(--font-large);
+    margin: 0;
+  }
+  
+  .emoji {
+    font-size: var(--font-medium);
+    margin: 5px 0;
+  }
+  
+  .weather-description {
+    font-size: var(--font-small);
+    margin: 7px 0;
+    color: var(--text-color);
+  }
+  
+  /* Temperature range styles */
+  .temperature-range {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .min-temp,
+  .max-temp {
+   
+  }
+  
+  /* Image styles */
+  .weather-image {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 50%;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 500px) {
+    .weather-container {
+      padding: 10px;
+    }
+  
+    .temperature {
+      font-size: 30px; /* Reduce font size on smaller screens */
+    }
+  
+    .emoji {
+      font-size: 25px; /* Adjust emoji size */
+    }
+  
+    .weather-icon {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
